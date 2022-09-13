@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2481c374b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Presentation</title>
+  </head>
+  <body>
+    <!-- Page 1 (Intro) -->
+    <section id="page-1" class="page ">
+    <h1>Welcome to my Presentation</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit corrupti
+      voluptatum rerum quis quas iste quibusdam necessitatibus consectetur.
+      Facere cupiditate deleniti, perferendis alias enim eum impedit, quia
+      quisquam animi sequi optio laboriosam doloribus illo dignissimos
+      voluptates? Nesciunt, esse! Tempora, aut.
+    </p>
+    <div>
+      <a id="btn1" href="#page-2" class="btn "
+        >Next Page <i class="fas fa-arrow-circle-down"></i
+      ></a>
+    </section>
+    <!-- Page 2 (Intro) -->
+    <section id="page-2" class="page">
+        <h1>Page 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit corrupti
+          voluptatum rerum quis quas iste quibusdam necessitatibus consectetur.
+          Facere cupiditate deleniti, perferendis alias enim eum impedit, quia
+          quisquam animi sequi optio laboriosam doloribus illo dignissimos
+          voluptates? Nesciunt, esse! Tempora, aut.
+        </p>
+        <div>
+          <a id="btn2" href="#page-1" class="btn btn-dark"
+            >Prev Page <i class="fas fa-arrow-circle-up"></i
+          ></a>
+          <a id="btn3" href="#page-3" class="btn"
+            >Next Page <i class="fas fa-arrow-circle-down"></i
+          ></a>
+        </div>
+    </section>
+    <!-- Page 3 (Intro) -->
+    <section id="page-3" class="page">
+        <h1>Page 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit corrupti
+          voluptatum rerum quis quas iste quibusdam necessitatibus consectetur.
+          Facere cupiditate deleniti, perferendis alias enim eum impedit, quia
+          quisquam animi sequi optio laboriosam doloribus illo dignissimos
+          voluptates? Nesciunt, esse! Tempora, aut.
+        </p>
+        <div>
+          <a id="btn4" href="#page-2" class="btn btn-dark"
+            >Prev Page <i class="fas fa-arrow-circle-up"></i
+          ></a>
+          <a id="btn5" href="#page-4" class="btn"
+            >Next Page <i class="fas fa-arrow-circle-down"></i
+          ></a>
+        </div>
+    </section>
+    <!-- Page 4 (Intro) -->
+    <section id="page-4" class="page">
+        <h1>Page 4</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit corrupti
+          voluptatum rerum quis quas iste quibusdam necessitatibus consectetur.
+          Facere cupiditate deleniti, perferendis alias enim eum impedit, quia
+          quisquam animi sequi optio laboriosam doloribus illo dignissimos
+          voluptates? Nesciunt, esse! Tempora, aut.
+        </p>
+        <div>
+          <a id="btn6" href="#page-3" class="btn btn-dark"
+            >Prev Page <i class="fas fa-arrow-circle-up"></i
+          ></a>
+        </div>
+    </section>
+    <script>
+        const btn1 = document.getElementById("btn1");
+        btn1.addEventListener("click", aBtn1);
+        function aBtn1(e) {
+            document.getElementById("page-2").scrollIntoView({ behavior: "smooth" });
+            e.preventDefault();
+        }
+        const btn2 = document.getElementById("btn2");
+        btn2.addEventListener("click", aBtn2);
+        function aBtn2(e) {
+            document.getElementById("page-1").scrollIntoView({ behavior: "smooth" });
+            e.preventDefault();
+        }
+        const btn3 = document.getElementById("btn3");
+        btn3.addEventListener("click", aBtn3);
+        function aBtn3(e) {
+            document.getElementById("page-3").scrollIntoView({ behavior: "smooth" });
+            e.preventDefault();
+        }
+        const btn4 = document.getElementById("btn4");
+        btn4.addEventListener("click", aBtn4);
+        function aBtn4(e) {
+            document.getElementById("page-2").scrollIntoView({ behavior: "smooth" });
+            e.preventDefault();
+        }
+        const btn5 = document.getElementById("btn5");
+        btn5.addEventListener("click", aBtn5);
+        function aBtn5(e) {
+            document.getElementById("page-4").scrollIntoView({ behavior: "smooth" });
+            e.preventDefault();
+        }
+        const btn6 = document.getElementById("btn6");
+        btn6.addEventListener("click", aBtn6);
+        function aBtn6(e) {
+            document.getElementById("page-3").scrollIntoView({ behavior: "smooth" });
+            e.preventDefault();
+        }
+    </script>
+  </body>
+</html>
